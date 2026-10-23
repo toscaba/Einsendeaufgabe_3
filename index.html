@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Geometrie aus Linien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>2D Geometrie aus Linien</h1>
+
+        <p class="description">
+            Eine 2D-Geometrie, die mit WebGL aus einzelnen Linien und Vertices dargestellt wird.
+        </p>
+
+        <section class="drawing-section">
+            <div class="canvas-container">
+                <canvas id="glCanvas" width="700" height="500">
+                </canvas>
+            </div>
+
+            <p id="status">WebGL wird initialisiert …</p>
+            <p id="vertexCount"></p>
+        </section>
+
+        <section class="info-section">
+            <h2>Technische Umsetzung</h2>
+            <p>
+                Die Geometrie wird durch 2D-Vertices beschrieben und mit WebGL als Linien dargestellt.
+                Verwendet wird GL_LINES.
+            </p>
+        </section>
+
+        <footer>
+            <p>Technik: HTML, CSS, JavaScript und WebGL</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
