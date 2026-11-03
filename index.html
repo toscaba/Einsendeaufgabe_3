@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2D Geometrie aus Linien</title>
+    <title>Farbig gefüllte 2D Geometrie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1>2D Geometrie aus Linien</h1>
+        <h1>Farbig gefüllte 2D Geometrie</h1>
 
         <p class="description">
-            Eine 2D-Geometrie, die mit WebGL aus einzelnen Linien und Vertices dargestellt wird.
+                Eine 2D-Katzengeometrie mit farbig gefüllten Dreiecken und interpolierten Farbverläufen.
         </p>
 
         <section class="drawing-section">
@@ -27,8 +27,11 @@
         <section class="info-section">
             <h2>Technische Umsetzung</h2>
             <p>
-                Die Geometrie wird durch 2D-Vertices beschrieben und mit WebGL als Linien dargestellt.
-                Verwendet wird GL_LINES.
+            Die Katzengeometrie wird durch 2D-Vertices beschrieben und mithilfe
+            von Dreiecken mit WebGL dargestellt. Die einzelnen Vertices besitzen
+            individuelle RGBA-Farbwerte, wodurch farbige Flächen und Farbverläufe
+            entstehen können. Für die Darstellung wird GL_TRIANGLES in Kombination
+            mit einem Index-Buffer und gl.drawElements() verwendet.
             </p>
         </section>
 
